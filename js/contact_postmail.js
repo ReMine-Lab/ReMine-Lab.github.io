@@ -15,15 +15,15 @@ function onError(error) {
     window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
 }
 
-var sendButton = $("#" + form_id + " [name='sendMessageButton']");
+var sendButton = $("#" + form_id + " [id='sendMessageButton']");
 
 function send() {
     sendButton.val('Sending…');
     sendButton.prop('disabled',true);
 
-    var subject = $("#" + form_id + " [name='name']").val();
-    var email = $("#" + form_id + " [name='email']").val();
-    var message = $("#" + form_id + " [name='message']").val();
+    var subject = $("#" + form_id + " [id='name']").val();
+    var email = $("#" + form_id + " [id='email']").val();
+    var message = $("#" + form_id + " [id='message']").val();
     data['subject'] = subject;
     data['email'] = email;
     data['text'] = message;
