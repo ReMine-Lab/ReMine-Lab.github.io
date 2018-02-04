@@ -118,12 +118,12 @@
                 <p class="help-block"></p>
               </div>
             </div>
-            <div class="control-group form-group">
+<!--             <div class="control-group form-group">
               <div class="controls">
                 <label>Phone Number:</label>
                 <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
               </div>
-            </div>
+            </div> -->
             <div class="control-group form-group">
               <div class="controls">
                 <label>Email Address:</label>
@@ -181,11 +181,21 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#sendMessageButton').click(function() {
+            $('#contactForm').attr('action',
+                           'mailto:cygao@cse.cuhk.edu.hk?subject=' +
+                           $('#name').val() + '&email=' + $('#email').val() + '&email=' + $('#message').val());
+            $('#contactForm').submit();
+    });
+});
+    </script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/contact_me.js"></script> -->
 
   </body>
 
