@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>IDEA-ICSE'18</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../color/default.css" rel="stylesheet">
+
+<!-- =======================================================
+    Theme Name: Maxim
+    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+======================================================= -->
+</head>
+<body>
+
+<!-- navbar -->
+<div class="navbar-wrapper">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<!-- Responsive navbar -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+				<h1 class="brand"><a href="index.html">IDEA</a></h1>
+				<!-- navigation -->
+				<nav class="pull-right nav-collapse collapse">
+				<ul id="menu-main" class="nav">
+					<li><a title="home" href="#home">River</a></li>
+					<li><a title="works" href="#works">Parameter</a></li>
+					<li><a title="download" href="#download">Download</a></li>
+					<li><a title="blog" href="#blog">Examples</a></li>
+				</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- spacer section -->
+<section id="home" class="section">
+<div class="container">
+	<h4>Issue River</h4>
+	<p>Due to space limit, we only show the issue river of YouTube. You can move your mouse to a branch and view the corresponding issues in sentences and phrases. The emerging ones are highlighted.</p>
+	<div class="row">
+		<iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="river.html" style="height:900px;width: 100%;display:inline;" scrolling="no"></iframe>
+	</div>
+</div>
+</section>
+<!-- end spacer section -->
+
+<!-- section: services -->
+<section id="works" class="section">
+<div class="container">
+	<h4>Parameter Analysis of All the Apps</h4>
+	<!-- Four columns -->
+	<div class="row">
+		<div class="span10 offset1">
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Effect of Topic Number</caption>
+			      <thead>
+			        <tr>
+			          <th>Noaa Radar</th>
+			          <th>Viber</th>
+			          <th>Ebay</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td><img class="zoom" src="img/topic_num/radar.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/topic_num/viber.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/topic_num/ebay.png" style="width:70%" /></td>
+			        </tr>
+			       </tbody>
+			       <thead>
+			       	  <th>YouTube</th>
+			          <th>Clean Master</th>
+			          <th>SwiftKey</th>
+			       </thead>
+			       <tbody>
+			        <tr>
+			          <td><img class="zoom" src="img/topic_num/youtube.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/topic_num/clean_master.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/topic_num/swiftkey.png" style="width:70%" /></td>
+			        </tr>
+			       </tbody>	          
+		        </table>
+		        <p><span style="font-weight: bold">Discussion:</span> In IDEA, a larger topic number can bring more prioritized app issues,which can cover more changelogs. However, more app issues may be a double-edged sword, since the metric Precision_E can be decreased. To better balance the precision andrecall, we set the topic number as 10 during experiments.</p>
+	    </div>
+
+	    <div class="span10 offset1">
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Effect of Window Size</caption>
+			      <thead>
+			        <tr>
+			          <th>Noaa Radar</th>
+			          <th>Viber</th>
+			          <th>Ebay</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td><img class="zoom" src="img/win_size/radar.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/win_size/viber.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/win_size/ebay.png" style="width:70%" /></td>
+			        </tr>
+			      </tbody>
+			      <thead>
+			      	  <th>YouTube</th>
+			          <th>Clean Master</th>
+			          <th>SwiftKey</th>
+			      </thead>
+			      <tbody>
+			      	  <td><img class="zoom" src="img/win_size/youtube.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/win_size/clean_master.png" style="width:70%" /></td>
+			          <td><img class="zoom" src="img/win_size/swiftkey.png" style="width:70%" /></td>
+			      </tbody>	          
+		        </table>
+		        <p><span style="font-weight: bold">Discussion:</span> For most apps (4/6, except Clean Master and SwiftKey), the values of F_hybrid present an inverted “U” shape for bothphrase-level and sentence-level issues. We attribute this to the reason that the topic distributions of the current version are strongly dependent on those of the previous versions. Larger window sizes can increase instability of the results.</p>
+	    </div>
+	</div>
+</div>
+</section>
+<!-- end section: services -->
+<!-- section: works -->
+<section id="download" class="section">
+<div class="container clearfix">
+	<h4>Download</h4>
+	<!-- portfolio filter -->
+	<div class="row">
+		<div class="span2 offset2 flyIn">
+			<div class="people" onclick="window.open('https://github.com/ReMine-Lab/IDEA', "_blank");">
+				<img class="team-thumb img-circle" src="../img/code.png" alt="" />
+				<h3><a>Source Code</a></h3>
+				<p>
+					For review analysis, visualization and evaluation.
+				</p>
+			</div>
+		</div>
+		<div class="span2 offset1 flyIn">
+			<div class="people" onclick="window.open('https://github.com/ReMine-Lab/IDEA/tree/master/dataset');">
+				<img class="team-thumb img-circle" src="../img/data.png" alt="" />
+				<h3><a>Dataset</a></h3>
+				<p>
+					Raw reviews, changelogs, and groundtruth.
+				</p>
+			</div>
+		</div>
+		<div class="span2 offset1 flyIn">
+			<div class="people" onclick="window.open('https://github.com/ReMine-Lab/IDEA');">
+				<a href="#demo" onclick="myFunction()">
+					<img class="team-thumb img-circle" src="../img/terms.png" alt="" />
+				</a>
+				<h3><a>Results</a></h3>
+				<p>
+					Captured issues and performance</a>.
+				</p>
+			</div>
+		</div>
+	</div>	
+</div>
+</section>
+
+
+<!-- section: team -->
+<section id="blog" class="section">
+<div class="container clearfix">
+	<h4>Examples of Detected Issues and Corresponding Changelogs</h4>
+	<div class="row">
+		<div class="span10 offset1">
+			<p>Due to time limit, we only show example of Noaa Radar for understanding (Example of YouTube can be found in the paper). All the apps will be summarized in the <a href="#download" style="font-weight: bold;">Download</a> part for reference.</p>
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Detected Phrase Issues</caption>
+			      <thead>
+			        <tr>
+			          <th>Version</th>
+			          <th>Topic 1</th>
+			          <th>Topic 2</th>
+			          <th>Topic 3</th>
+			          <th>Topic 4</th>
+			          <th>Topic 5</th>
+			          <th>Topic 6</th>
+			          <th>Topic 7</th>
+			          <th>Topic 8</th>
+			          <th>Topic 9</th>
+			          <th>Topic 10</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td>v3.3</td>
+			          <td>weather alert: 0.84</td>
+			          <td>multiple location: 1.02</td>
+			          <td>weekly outlook: 0.89</td>
+			          <td>severe weather: 1.12</td>
+			          <td>weather channel: 1.02</td>
+			          <td>local news: 1.12</td>
+			          <td>yahoo weather: 0.71</td>
+			          <td>storm path: 1.30</td>
+			          <td>refresh delay: 1.21</td>
+			          <td>weather advisory: 1.31</td>
+			        </tr>
+			        <tr>
+			          <td>v3.4</td>
+			          <td>satellite view: 1.05</td>
+			          <td>local weather: 1.17</td>
+			          <td>weather channel: 0.77</td>
+			          <td>chesapeake bay: 0.81</td>
+			          <td>radar image: 0.72</td>
+			          <td>local news: 1.27</td>
+			          <td>long term forecast: 1.15</td>
+			          <td>doppler radar: 1.58</td>
+			          <td><mark>apple watch: 0.75</mark></td>
+			          <td>detail information: 1.14</td>
+			        </tr>
+			        <tr>
+			          <td>v3.5</td>
+			          <td>west texas: 1.07</td>
+			          <td>noaa map: 0.91</td>
+			          <td>weather channel: 1.37</td>
+			          <td>storm hurricane: 0.91</td>
+			          <td>radar map: 1.32</td>
+			          <td>weather forecast: 1.00</td>
+			          <td><mark>travel across: 0.68</mark></td>
+			          <td>battery life: 0.95</td>
+			          <td>oil field: 0.86</td>
+			          <td><mark>location service: 0.68</mark></td>
+			        </tr>		          
+		        </table>
+		        
+		        <table class="table table-bordered table-hover">
+			      <caption class="text-center">Detected Sentence Issues</caption>
+			      <thead>
+			        <tr>
+			          <th>Topic</th>
+			          <th>v3.3</th>
+			          <th>v3.4</th>
+			          <th>v3.5</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td>Topic 1</td>
+			          <td>I want to see next <digit> <digit> hour at least: 1.84</td>
+			          <td>Easy to use and you can zoom in and out when the radar be move to see how close the rain be to your location: 2.07</td>
+			          <td>With west texas weather change at the drop of a hat it good to know the direction and intensity of a storm: 1.77</td>	          
+			        </tr>
+			        <tr>
+			          <td>Topic 2</td>
+			          <td>Accurate and easy to access use: 2.20</td>
+			          <td>While travel this app keep us inform on the local weather: 2.10</td>
+			          <td>Reliable and accurate and easy to use: 3.08</td>
+			        </tr>
+			        <tr>
+			          <td>Topic 3</td>
+			          <td>This be the first weather track app that i have use it do the job well: 1.58</td>
+			          <td>Would like radar activity to show upcoming: 1.81</td>
+			          <td>I find it very useful before head out on the motorcycle: 1.57</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 4</td>
+			        	<td>Work well to watch predetermine location be severe weather: 2.38</td>
+			        	<td>Live aboard my boat and travel up and down the chesapeake bay on her and other boat do delivery: 1.54</td>
+			        	<td>It show roughly the last 40 minute of weather so you can see where bad weather be head and the severity of it: 2.00</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 5</td>
+			        	<td>I pay for this app think i would get a good solid weather app but i find that the forecast be terrible: 2.13</td>
+			        	<td>Best way to see what kind of weather head my way in real time with pinpoint accuracy and clarity: 2.44</td>
+			        	<td>Most free weather apps have as good or better radar map: 2.30</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 6</td>
+			        	<td>I have try all the radar apps from local tv station and they be all unreliable: 1.58</td>
+			        	<td>Would rather have combine with the weather live app instead of have <digit> apps: 2.42</td>
+			        	<td>I pay <digit> buck for this app which bout radar and good weather_forecast: 2.01</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 7</td>
+			        	<td>Great to see weather alert across the country and keep any eye on what be head your way: 1.71</td>
+			        	<td>I love the live radar: 1.61</td>
+			        	<td><mark>It nice to not only get alert to my own weather situation but to also get alert when my family be have alert as well: 12.78</mark></td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 8</td>
+			        	<td>Most accurate in predict the expect time of thunderstorm as well as the possibility of tornado: 1.96</td>
+			        	<td>Accurate report and easy to use: 3.21</td>
+			        	<td>Use all the time and it never miss tell it like it be: 2.14</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 9</td>
+			        	<td>The radar refresh be a little limit and slow but the forecast be fairly accurate: 1.68</td>
+			        	<td><mark>The application for apple watch look great and work really well also: 5.30</mark></td>
+			        	<td>I wish the app load faster and the loop work smoother: 1.88</td>
+			        </tr>
+			        <tr>
+			        	<td>Topic 10</td>
+			        	<td>When tap on a weather advisory sector it would be nice to access the detail of the advisory by tap any area of the pop up vs have to tap the little symbol: 1.86</td>
+			        	<td>I would like to see color specific warn and watch area: 2.30</td>
+			        	<td><mark>The panel be show high at my location in the high <digit> when the actual forecast have the high in the low <digit>: 12.58</mark></td>
+			        </tr>		          
+		        </table>
+	    </div>
+
+	    <div class="span10 offset1">
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Changelogs with key terms highlighted</caption>
+			      <thead>
+			        <tr>
+			          <th>Version</th>
+			          <th>Date</th>
+			          <th>Changelog</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td>3.3</td>
+			          <td>4/23/2015</td>
+			          <td style="text-align: left">(1) Now with <span style="color: red;">Apple Watch</span> support! Stay up to date with <span style="color: red;">warnings & alerts</span> sent directly to your wrist and react immediately. Take just a Glance for a quick weather check and get 24-hour forecast with just a swipe.</td>
+			        </tr>
+			       	  <td>3.4</td>
+			          <td>7/8/2015</td>
+			          <td style="text-align: left">(1) Travel with NOAA Radar Pro! The app can now automatically <span style="color: red;">update</span> you on weather & <span style="color: red;">alerts</span> in your <span style="color: red;">current location</span> as you <span style="color: red;">commute or travel</span>.<br>
+(2) Great improvements for the Apple Watch app. Detailed info for <span style="color: red;">weather alerts</span> is on your wrist - just tap the 'full text' control under any alert or the alert screen in the watch app. More weather parameters: swipe up to see feels like, pressure, wind, visibility and other current conditions data!<br>
+(3) Wider Radar <span style="color: red;">coverage</span>. We're excited to bring radar maps for Australia, Japan and Europe! Check your app's settings. European coverage includes: the United Kingdom, Ireland, France, the Netherlands, Belgium, Luxembourg, Liechtenstein, Germany, Switzerland, Italy (western), Denmark (southeast), Poland (western), Czech Republic, Austria (northwestern).</td>
+			       </tbody>	          
+		        </table>
+		        <p><span style="font-weight: bold">Discussion:</span> NOAA Radar gets high rating in App Store (avg., 4.5), and thereby IDEA detects few app aspectes with good rating, such as "apple watch" which is reflected in the corresponding changelog v3.4. But these aspects are hot in that version since the previous version v3.3 adds Apple Watch support. Also, the emerging issues "travel across" in v3.5 can be attributed to the update of v3.4. <span style="font-weight: bold;">App bugs</span> such as "wish the app load faster and the loop work smoother" for Topic 9 of v3.5 and <span style="font-weight: bold;">requested features</span> such as "Would like radar activity to show upcoming" for Topic 3 of v3.4 are also captured. </p>
+	    </div>
+	</div>
+	
+</div>
+<!-- /.container -->
+</section>
+<!-- end section: team -->
+
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="span6 offset3">
+			<p class="copyright">
+				&copy; ReMine-Lab. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ./container -->
+</footer>
+<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+<script src="../vendor/jquery/jquery.js"></script>
+<script src="../vendor/jquery/jquery.scrollTo.js"></script>
+<script src="../vendor/jquery/jquery.nav.js"></script>
+<script src="../vendor/jquery/jquery.localscroll-1.2.7-min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../vendor/jquery/jquery.flexslider.js"></script>
+<script src="../vendor/jquery/inview.js"></script>
+<script src="../vendor/jquery/validate.js"></script>
+<script src="../vendor/jquery/custom.js"></script>
+
+<script type="text/javascript">
+	function myFunction() {
+	    var x = document.getElementById('terms');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+</script>
+
+</body>
+</html>

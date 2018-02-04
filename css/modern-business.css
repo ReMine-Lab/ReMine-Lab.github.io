@@ -1,0 +1,80 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.carousel-item {
+  overflow: hidden; 
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.carousel-item img{
+  max-width: 100%;
+  max-height: 950px;
+  /*Centering img*/
+  width: 90%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: saturate(1.2);
+}
+
+.carousel-caption{
+  top:35%;
+  text-align: center;
+}
+
+.carousel-caption div{
+  /*This is to fix the background color to the text size*/
+  /*display: inline;*/
+  /*This is to extent the background color to screen size*/
+  margin-left: -600px;
+  margin-right: -600px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color:#000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-caption p{
+  margin-left: -150px;
+  margin-right: -150px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 30px;
+  color:#000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-img-top{
+  padding-top:5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+}
+
+ul.circle {
+  list-style-type: square;
+}
