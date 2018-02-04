@@ -110,7 +110,8 @@
       <div class="row">
         <div class="col-lg-8 mb-4">
           <h3>Send us a Message</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
+          <form name="sentMessage" id="contactForm" action="https://postmail.invotes.com/send"
+    method="post" novalidate>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name:</label>
@@ -139,6 +140,7 @@
             <div id="success"></div>
             <!-- For success/fail messages -->
             <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
           </form>
         </div>
 
@@ -181,21 +183,11 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#sendMessageButton').click(function() {
-            $('#contactForm').attr('action',
-                           'mailto:cygao@cse.cuhk.edu.hk?subject=' +
-                           $('#name').val() + '&email=' + $('#email').val() + '&email=' + $('#message').val());
-            $('#contactForm').submit();
-    });
-});
-    </script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <!-- <script src="js/contact_me.js"></script> -->
+    <script src="js/contact_postmail.js"></script>
 
   </body>
 
