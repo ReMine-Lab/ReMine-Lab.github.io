@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AdBetter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="color/default.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['ID', 'X', 'Y', 'Concern Type', 'Concern Level'],
+        ['interruption',86.471761,35.883779, 'Obstruction',0.038886],
+        ['obtrusive',65.389825,88.385457, 'Obstruction',0.020553],
+        ['fullscreen ad',-550.260322,124.43375, 'Ad Size',0.00339],
+        ['30 second ad',161.758996,-70.617801, 'Ad Timing',0.015209],
+        ['full screen ad',34.589368,31.4788, 'Ad Size',0.024316],
+        ['15 second ad',21.175527,117.21774, 'Ad Timing',0.00266],
+        ['obnoxious ad',-57.364679,-23.767606, 'Obstruction',0.003095],
+        ['popups',21.042479,72.258289, 'Appearing Way',0.041],
+        ['irrelevant ads',59.110402,-161.80904, 'Ad Content',0.003045],
+        ['pop up ad',-118.249686,-108.666143, 'Appearing Way',0.039611],
+        ['30 second ads',-136.646912,39.467007, 'Ad Timing',0.012905],
+        ['banner ad',-65.39636,158.041016, 'Ad Size',0.012146],
+        ['unskippable',-3.107622,-25.209857, 'Ad Timing',0.007204],
+        ['advert pop up',-9.323657,36.704105, 'Appearing Way',0.00444],
+        ['banner ads',-26.710818,2.959173, 'Ad Size',0.00853],
+        ['distraction',-8.454568,-172.8815, 'Obstruction',0.018901],
+        ['ad pop up',119.043463,151.043207, 'Appearing Way',0.039756],
+        ['spam',121.201486,81.268077, 'Ad Content',0.287079],
+        ['adware',-118.007331,117.913375, 'Ad Content',0.037072],
+        ['intrusive ad',-177.953528,29.131341, 'Obstruction',0.014982],
+        ['popup ad',-20.920133,101.248409, 'Appearing Way',0.008734],
+        ['click bait', -43.976082,65.7581, 'Ad Content', 0.011148]
+      ]);
+
+      var options = {
+        title: 'Visualization of User-Concerned Ad Issues Labeled with Concern Levels',
+        hAxis: {title: 'X',
+                viewWindow: {
+                  min: -500,
+                  max: 500
+                },
+                },
+        vAxis: {title: 'Y'},
+        bubble: {
+          textStyle: {
+            fontSize: 11.5,
+            fontName: 'Times-Roman',
+            color: 'black',
+            bold: true
+          }
+        }
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('textstyle'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+<!-- =======================================================
+    Theme Name: Maxim
+    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+======================================================= -->
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar-wrapper">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<!-- Responsive navbar -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+				<h1 class="brand"><a href="index.html">AdBetter</a></h1>
+				<!-- navigation -->
+				<nav class="pull-right nav-collapse collapse">
+				<ul id="menu-main" class="nav">
+					<!-- <li><a title="team" href="#about">Homepage</a></li> -->
+					<li><a title="services" href="#services">Participant</a></li>
+					<li><a title="works" href="#works">Download</a></li>
+					<li><a title="blog" href="#blog">Visualization</a></li>
+				</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- spacer section -->
+<!-- <section class="spacer green">
+<div class="container">
+	<div class="row">
+		<div class="span6 alignright flyLeft">
+			<blockquote class="large">
+				 Do Users Care about Ad Costs? Exploring the Effects of In-App Ads on User Experience based on App Reviews
+			</blockquote>
+		</div>
+		<div class="span6 aligncenter flyRight">
+			<img src="img/mobilead.png" />
+		</div>
+	</div>
+</div>
+</section> -->
+
+<!-- section: participant -->
+<section id="services" class="section">
+<div class="container clearfix">
+	<h4>Participant</h4>
+	<div class="row">
+		<div class="span10 offset1">
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Interaction Duration with Apps</caption>
+			      <thead>
+			        <tr>
+			          <th>App ID</th>
+			          <th>App Name</th>
+			          <th>Function</th>
+			          <th>Avg. Duration (s)</th>
+			          <th>Min. Duration (s)</th>
+			          <th>Max. Duration (s)</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td>A1</td>
+			          <td>RadarNow!</td>
+			          <td>To quickly see an animated radar image and current conditions</td>
+			          <td>66.36</td>
+			          <td>19.89</td>
+			          <td>155.12</td>
+			        </tr>
+			        <tr>
+			          <td>A2</td>
+			          <td>Transparent Clock</td>
+			          <td>Accurate weather forecast</td>
+			          <td>61.18</td>
+			          <td>25.37</td>
+			          <td>92.76</td>
+			        </tr>
+			        <tr>
+			          <td>A3</td>
+			          <td>Weather Underground: Forecasts</td>
+			          <td>Hyper-local forecasts and current conditions, interactive radar, customizable alerts</td>
+			          <td>67.93</td>
+			          <td>20.28</td>
+			          <td>125.80</td>
+			        </tr>
+			        <tr>
+			          <td>A4</td>
+			          <td>AccuWeather</td>
+			          <td>To stay connected to the latest weather conditions</td>
+			          <td>68.44</td>
+			          <td>24.30</td>
+			          <td>153.56</td>
+			        </tr>
+			        <tr>
+			          <td>A5</td>
+			          <td>Barcode Scanner</td>
+			          <td>To scan Barcode and QR code</td>
+			          <td>14.51</td>
+			          <td>0.07</td>
+			          <td>42.77</td>
+			        </tr>
+			        <tr>
+			          <td>A6</td>
+			          <td>Advanced Task Killer</td>
+			          <td>To speed up your phone</td>
+			          <td>23.49</td>
+			          <td>3.01</td>
+			          <td>59.34</td>
+			        </tr>
+			        <tr>
+			          <td>A7</td>
+			          <td>Super-Bright LED Flashlight</td>
+			          <td>To instantly turns your device into the fastest torchligh</td>
+			          <td>23.50</td>
+			          <td>4.48</td>
+			          <td>69.36</td>
+			        </tr>
+			        <tr>
+			          <td>A8</td>
+			          <td>iTranslate - Free Translator</td>
+			          <td>An award winning translation tool</td>
+			          <td>65.30</td>
+			          <td>28.37</td>
+			          <td>167.59</td>
+			        </tr>
+			        <tr>
+			          <td>A9</td>
+			          <td>AVG Cleaner for Android phones</td>
+			          <td>To clean precious memory and space, save battery power</td>
+			          <td>56.34</td>
+			          <td>13.24</td>
+			          <td>331.12</td>
+			        </tr>
+			        <tr>
+			          <td>A10</td>
+			          <td>Pedometer</td>
+			          <td>A step counter</td>
+			          <td>58.35</td>
+			          <td>11.34</td>
+			          <td>143.03</td>
+			        </tr>
+			        <tr>
+			          <td>A11</td>
+			          <td>Pedometer & Weight Loss Coach</td>
+			          <td>To syncs steps and calories</td>
+			          <td>64.44</td>
+			          <td>11.34</td>
+			          <td>153.71</td>
+			        </tr>
+			        <tr>
+			          <td>A12</td>
+			          <td>Period Tracker</td>
+			          <td>To track your periods</td>
+			          <td>96.72</td>
+			          <td>20.98</td>
+			          <td>134.44</td>
+			        </tr>
+			        <tr>
+			          <td>A13</td>
+			          <td>Alarm Clock Plus★</td>
+			          <td>A stable andrid alarm clock</td>
+			          <td>69.80</td>
+			          <td>20.98</td>
+			          <td>134.44</td>
+			        </tr>
+			        <tr>
+			          <td>A14</td>
+			          <td>Daily Ab Workout FREE</td>
+			          <td>A great 5 to 10 minute daily ab routine</td>
+			          <td>105.03</td>
+			          <td>25.74</td>
+			          <td>210.15</td>
+			        </tr>
+			        <tr>
+			          <td>A15</td>
+			          <td>Map My Ride GPS Cycling Riding</td>
+			          <td>To track and map every ride</td>
+			          <td>102.43</td>
+			          <td>22.46</td>
+			          <td>230.95</td>
+			        </tr>
+			        <tr>
+			          <td>A16</td>
+			          <td>Calorie Counter - MyFitnessPal</td>
+			          <td>To lose weight, tone up, get healthy, change your habits, or start a new diet</td>
+			          <td>149.52</td>
+			          <td>13.57</td>
+			          <td>501.06</td>
+			        </tr>
+			        <tr>
+			          <td>A17</td>
+			          <td>BBC News</td>
+			          <td>To get more of the news that matters to you</td>
+			          <td>96.64</td>
+			          <td>15.10</td>
+			          <td>325.52</td>
+			        </tr>
+			        <tr>
+			          <td>A18</td>
+			          <td>Fox News</td>
+			          <td>To stay on top of today's latest stories</td>
+			          <td>88.64</td>
+			          <td>6.88</td>
+			          <td>292.97</td>
+			        </tr>
+			        <tr>
+			          <td>A19</td>
+			          <td>NYTimes - Latest News</td>
+			          <td>For Android delivers breaking news</td>
+			          <td>100.29</td>
+			          <td>27.35</td>
+			          <td>243.32</td>
+			        </tr>
+			        <tr>
+			          <td>A20</td>
+			          <td>Dailyhunt (Newshunt) News</td>
+			          <td>To provide news in multiple languages from leading news papers of India</td>
+			          <td>87.72</td>
+			          <td>11.92</td>
+			          <td>190.19</td>
+			        </tr>
+			      </tbody>
+		    </table>
+		    <p><span style="font-weight: bold;">Note:</span> Due to time limit, we only list overall statistics of interaction durations of the subject apps. Individual durations will also be published soon with anonymity.</p>
+	    </div>
+	</div>
+</div>
+</section>
+<!-- end section: services -->
+
+<!-- section: works -->
+<section id="works" class="section">
+<div class="container clearfix">
+	<h4>Download</h4>
+	<!-- portfolio filter -->
+	<div class="row">
+		<div class="span2 offset2 flyIn">
+			<div class="people">
+				<img class="team-thumb img-circle" src="img/code.png" alt="" />
+				<h3>Source Code</h3>
+				<p>
+					For cost measurement and review analysis download here (hidden now).
+				</p>
+			</div>
+		</div>
+		<div class="span2 offset1 flyIn">
+			<div class="people">
+				<img class="team-thumb img-circle" src="img/data.png" alt="" />
+				<h3>Dataset</h3>
+				<p>
+					Collected usage traces and raw reviews download here (hidden now).
+				</p>
+			</div>
+		</div>
+		<div class="span2 offset1 flyIn">
+			<div class="people">
+				<a href="#demo" onclick="myFunction()">
+					<img class="team-thumb img-circle" src="img/terms.png" alt="" />
+				</a>
+				<h3>Related Terms</h3>
+				<p>
+					You can find the terms related the costs and advertising <a href="#demo" onclick="myFunction()" style="font-weight: bold;">here</a>.
+				</p>
+			</div>
+		</div>
+	</div>	
+</div>
+</section>
+
+
+<!-- Term table -->
+<div id="terms" style="display: none;">
+	<div class="row">
+		<div style="margin: auto; width: 50%;">
+			<table class="table table-bordered table-hover">
+			      <caption class="text-center">Cost-related terms</caption>
+			      <thead>
+			        <tr>
+			          <th>Cost Type</th>
+			          <th>#Terms</th>
+			          <th>Related Term</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td>Memory</td>
+			          <td>19</td>
+			          <td>ram memory, storage, storage space, memory space, space, internal memory, ram, internal storage, internal space, disk space, gb, battery power, extra space, ram memory, unnecessary space, capacity, mb, valuable space, precious space</td>
+			        </tr>
+			        <tr>
+			          <td>CPU</td>
+			          <td>17</td>
+			          <td>cpu, processor, gpu, cpu usage, laggy, slowly, too slow, incredibly slow, extremely slow, sluggish, painfully slow, terribly slow, take age, slower, slower than before, lag, fast</td>
+			        </tr>
+			        <tr>
+			          <td>Network</td>
+			          <td>12</td>
+			          <td>network connection, data connection, wifi connection, network signal, wifi, wifi network, wifi signal, internet connectivity, wireless connection, 4g connection, internet connection, wireless network</td>
+			        </tr>
+			        <tr>
+			          <td>Battery</td>
+			          <td>14</td>
+			          <td>battery life, battery power, batery, batt, battery drain, battery usage, battery rapidly, battery dry, battery overnight, battery juice, batterie, battery excessively, battery life, drain battery</td>
+			        </tr>
+		        </table>
+	        </div>
+        </div>
+</div>
+<!-- End term table -->
+
+
+<!-- section: blog -->
+<section id="blog" class="section">
+<div class="container">
+	<h4>Ad Issues</h4>
+	<!-- Ad Issue table -->
+	<div id="issues">
+		<div class="row">
+			<div class="span10 offset1">
+				<table class="table table-bordered table-hover">
+				      <caption class="text-center">Ad Issues with Proportions</caption>
+				      <thead>
+				        <tr>
+				          <th colspan="2">Obstruction (14.7%)</th>
+				          <th colspan="2">Ad Size (3.7%)</th>
+				          <th colspan="2">Ad Timing (2.9%)</th>
+				          <th colspan="2">Appearing Style (14.7%)</th>
+				          <th colspan="2">Ad Content (64.0%)</th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				        <tr>
+				          <td>distraction</td>
+				          <td>3.3%</td>
+				          <td>fullscreen ad</td>
+				          <td>0.2%</td>
+				          <td>15 second ad</td>
+				          <td>0.3%</td>
+				          <td>popups</td>
+				          <td>4.6%</td>
+				          <td>irrelevant ads</td>
+				          <td>0.3%</td>
+				        </tr>
+				        <tr>
+				          <td>interruption</td>
+				          <td>7.4%</td>
+				          <td>banner ads</td>
+				          <td>0.5%</td>
+				          <td>30 second ad</td>
+				          <td>1.2%</td>
+				          <td>popup ad</td>
+				          <td>0.7%</td>
+				          <td>spam</td>
+				          <td>60.0%</td>
+				        </tr>
+				        <tr>
+				          <td>intrusive ad</td>
+				          <td>1.5%</td>
+				          <td>full screen ad</td>
+				          <td>2.0%</td>
+				          <td>30 second ads</td>
+				          <td>1.0%</td>
+				          <td>advert pop up</td>
+				          <td>0.4%</td>
+				          <td>adware</td>
+				          <td>3.0%</td>
+				        </tr>
+				        <tr>
+				          <td>obtrusive</td>
+				          <td>2.3%</td>
+				          <td>banner ad</td>
+				          <td>1.1%</td>
+				          <td>unskippable</td>
+				          <td>0.5%</td>
+				          <td>ad pop up</td>
+				          <td>4.4%</td>
+				          <td>click bait</td>
+				          <td>1.0%</td>
+				        </tr>
+				        <tr>
+				          <td>obnoxious ad</td>
+				          <td>0.3%</td>
+				          <td>--</td>
+				          <td>--</td>
+				          <td>--</td>
+				          <td>--</td>
+				          <td>pop up ad</td>
+				          <td>4.5%</td>
+				          <td>--</td>
+				          <td>--</td>
+				        </tr>
+			        </table>
+		        </div>
+	        </div>
+	</div>
+	<!-- End term table -->
+	<div class="row">
+			<div id="textstyle" class="span12 offset2 aligncenter" style="width: 800px; height: 600px;">
+		</div>
+	<div class="blankdivider30"></div>
+	</div>
+</div>
+</section>
+
+<!-- end spacer section -->
+
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="span6 offset3">
+			<p class="copyright">
+				&copy; PaperID_407. All rights reserved.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ./container -->
+</footer>
+<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/inview.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/custom.js"></script>
+<!-- <script src="contactform/contactform.js"></script>
+ -->
+<script type="text/javascript">
+	function myFunction() {
+	    var x = document.getElementById('terms');
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	    } else {
+	        x.style.display = 'none';
+	    }
+	}
+</script>
+
+</body>
+</html>
