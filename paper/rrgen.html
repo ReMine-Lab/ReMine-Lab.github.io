@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>RRGen</title>
+
+  <!-- Custom fonts for this theme -->
+   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/starter-template.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <h1 class="navbar-brand js-scroll-trigger" href="#page-top">Automate Review Response Generation</h1>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Example Section -->
+  <section class="page-section" id="example" style="margin-top: 20px;">
+    <div class="container">
+      <h2 style="text-align: center;">15 Examples</h2>
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #1</th>
+              <th>Yesterday waited 25min for cab finally he didn't come and tried reach him multiple time but calls were unanswered and driver was really unprofessional. he should learn how to talk with customer and how to give respect. Finally I cancel the cab and charges 10. Waste of time and money.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">Hey rashmi, we understand this can be frustrating and we are working towards make this better. We would appreciate it if you could send out a note of this with detailed &lt;url&gt; contact and we will take it up from there.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">Hi &lt;user&gt;, this certainly sound like a frustrated experience. let's make sure we follow up with you regarding this issue. Send in a quick note to &lt;url&gt; contact and we'll take it up from there and take appropriate action.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">This doesn't sound right. Let's connect. Please send a note to &lt;url&gt; contact so we can follow up with you.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">Hi &lt;user&gt;, this doesn't sound right. We understand this can be frustrated and we are working towards make this better. We would appreciate it if you could send out a description of this with detail &lt;url&gt; contact and we will take it up from there.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #2</th>
+              <th>I can not able to log in. There seems to be no customer care service number.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">Hi &lt;user&gt; this doesn't sound right. For issues related to sign in please visit &lt;url&gt; if the problem still persist please write to us &lt;url&gt; contact and we'll connect.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">Hey &lt;user&gt; this doesn't sound right for issues related to sign in please visit &lt;url&gt; if the problem still persist please write to us url contact and we ll connect</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">We're here to help. Send us a note &lt;url&gt; contact so we can look into this.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; this doesn't sound right. For issues related to sign in please visit &lt;url&gt; if the problem still persist please write to us &lt;url&gt; contact and we'll connect.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #3</th>
+              <th>Bloat on galaxy note vodafone.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">Thank for your review. &lt;App&gt; is pre installed on certain samsung device. While you cannot uninstall the &lt;App&gt; there be an option to disable it. Disable the &lt;App&gt; make sure it never run use data or ever show up in your launcher. You can disable &lt;App&gt; in the application manager.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">Thank you for comment. I hope you enjoy app and give us digit 5 rating in order to help us grow if you need more information about app please app to our faq page or email us email thank you.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">Hi &lt;user&gt; thank for your review. We are really sorry that you feel this way about the app. Would you mind tell us the reason why you dislike the current version of the app so we can improve it ? we really appreciate your &lt;digit&gt; star vote! nice day!</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">Thank for your feedback. Sorry to hear that you be unhappy with the app. Please contact us within the &lt;App&gt; or email &lt;email&gt; and our team will be happy to address this issue and hopefully resolve it for you.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #4</th>
+              <th>It sucks so much that my phone almost over heat. This battery saver is stupid and dumb. Dont waste ur time.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">Hi vinnyplayz. Thank for your feedback and now we be work on the cooler to improve this issue. Could you please send your detail problem to our email &lt;email&gt; so when we figure out the solution we can contact you immediately? &lt;app&gt; you a nice day!</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hi thank for try clean master we hope you have a good experience with our app if you have any problem or suggestion you can contact me via email i m ready to help if you find the app useful we d really appreciate if you could rate us digit star on google play thank you so much</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hi thank for use &lt;digit&gt; &lt;app&gt; antivirus boost. &lt;digit&gt; &lt;app&gt; be a free phone cleaner which commit to scan virus and clean virus do the best protection clean cache clean junk file boost phone speed save battery and cool down phone temperature for your &lt;app&gt; phone. hope you'll like our app. any problem just email &lt;email&gt;</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">dear user sorry for the inconvenience. we notice you have some concern about battery. could you tell us what happen and provide some information include screen contrast screenshot s of battery status of your phone setting gt. battery gt. &lt;digit&gt; ? please send us via email &lt;email&gt; much appreciate.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #5</th>
+              <th>my account don't open.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hey &lt;user&gt; this doesn't sound right. for issue relate to sign in please visit &lt;url&gt; if the problem still persist please write to us &lt;url&gt; contact and we'll connect.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">could you please explain the issue in detail at email so that we may help you better thank app team</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">we're here to help. send us a note &lt;url&gt; contact so we can look into this.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; this certainly sound like a frustrate experience. let's make sure we follow up with you regard this issue. send in a quick note to &lt;url&gt; contact and we'll connect.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #6</th>
+              <th>video be good before. it be above 1min but video be convert in to oly 30sec.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hello we're sorry about this issue we'll be release an update that fix this very soon please check the update daily and thank you for your support ! please contact us via mail &lt;email&gt;</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hello thank you for your feedback if you enjoy your app experience please take a moment to help the community grow by give us more star here if you have any question or suggestion please feel free to tell us</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">dear friend we feel sorry for the trouble you have meet. would you please tell us more detail about the problem ? &lt;app&gt; to setting &lt;app&gt; clear cache clear data if the issue persist write to us at &lt;email&gt; give your device detail &lt;app&gt; os version &lt;app&gt; version a description of the issue you be face.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; thank for your review. we apologize for the issue you be face and we be here to help. please send our team your device model &lt;app&gt; version and &lt;app&gt; os version to &lt;email&gt; our support team will further assist you on the matter.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #7</th>
+              <th>i love have everything i feel i need at my fingertip.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">thank for your feedback mario. glad to hear you be happy with flipboard !</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">thank you for your feedback we notice you ve give us digit star we would be very grateful if you could rate us digit star which mean the best if you have any suggestion please do not hesitate to contact us look forward to your digit star review</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">dear user thank you for your support. your feedback be very important to us. we'd like to invite you to join our &lt;app&gt; group so that you can share your opinion with us. we'll also announce pg relate information in that group. you can join us by search &lt;app&gt; core member on &lt;app&gt; you can also contact us by &lt;app&gt; &lt;digit&gt;.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi thank for your review and support ! we'd like to invite you to join our exclusive user community to get early access to new feature and give us feedback bite.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #8</th>
+              <th>more improvement expect from all aspect.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">dear user thank for your feedback we be work on it and if you have any good idea please do not hesitate to tell &lt;app&gt; via &lt;email&gt; hope to get &lt;digit&gt; star from you.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">user if you have any question you re welcome to contact us at email if you like our app you can really help us out by give us a digit star rat at app play thank you very much for your support</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hi &lt;user&gt; thank for your review. we be really sorry that you feel this way about the app. would you mind tell us the reason why you dislike the current app name of &lt;app&gt; master you contact us via &lt;email&gt; thank you.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi thank for your feedback. could you please tell us more detail about your issue ? we'll be glad to hear that and could you please give us some more detail about your problem ? could you please give us a &lt;digit&gt; star to encourage us.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #9</th>
+              <th>it will be good. if you add feature to save hd pic. as the pixel get damage !</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hi &lt;user&gt; thank you for your suggestion. we will keep it in mind for the next update. if you have any other suggestion or feedback feel free to email us at &lt;email&gt; a wonderful day !</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hi user if you want to enhance your photo make sure that the max image size have be set to the maximum go to your profile and then tap on the three dot button locate on the upper right hand corner of the screen if issue still not fix email us at email a super day</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hey &lt;user&gt; thank for the review. we're very sorry that you feel this way about the app be there any reason you feel that way ? please share your feedback with us at &lt;email&gt; this be super important to &lt;app&gt;</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hey &lt;user&gt; thank for your review. we apologize for the issue you be face and we be here to help. please contact us at &lt;email&gt; so we can explain everything for you.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #10</th>
+              <th>it's battery eater.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hi &lt;user&gt; please install gsam battery monitor to get accurate consumption per application you will see that &lt;app&gt; do not consume more then any other offline navigation. help by email please.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">dear user thank you for your support your feedback be very important to us we d like to invite you to join our app group so that you can share your opinion with us we ll also announce pg relate information in that group you can join us by search app core member on app you can also contact us by app digit</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hi there. thank for try &lt;app&gt;. feel free to contact us if you have any suggestion and problem when use our app. our e mail be &lt;email&gt; once we receive your feedback we'll reply and solve the problem asap. hope you'll like our &lt;app&gt; and we're look forward to your &lt;digit&gt; star rat. much appreciate ! d.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">thank you for the feedback. we would like to know why our application do not meet your expectation. feel free to contact us at &lt;email&gt; with as much detail of the issue as possible for proper and fast resolution of your request. thank you in advance. vladimir from customer support team.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #11</th>
+              <th>very good feature but should be more friendly.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hey &lt;user&gt; thank for your review here be some tutorial please check them out and for all your question please contact us at &lt;email&gt; &lt;url&gt; have a great day !</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">dear user thank you for your support your feedback be very important to us we d like to invite you to join our app group so that you can share your opinion with us we ll also announce pg relate information in that group you can join us by search photo grid core member on app whats app digit lineid angel tien</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">dear user thank you for your support. your feedback be very important to us. we'd like to invite you to join our &lt;app&gt; group so that you can share your opinion with us. we'll also announce pg relate information in that group. you can join us by search &lt;app&gt; core member on &lt;app&gt; you can also contact us by &lt;app&gt; &lt;digit&gt;. &lt;email&gt;</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hey &lt;user&gt; thank for your review. we be glad that you like picsart. it's always helpful for us to hear how we can improve picsart. if you have any idea or suggestion that you'd like to share with us please feel free to write to us at &lt;email&gt; at any time.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #12</th>
+              <th>why magic effect miss. and always hang if want to use the effect. always say server busy. please upgrade.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hey there thank for your review. we be sorry that you be face difficulty with the magic effect. to be able to help you out can you please contact us at &lt;email&gt; we will be more than happy to assist you !</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hello user we be sorry to tell you that unfortunately the new magic effect can t be support by all device they be create with a new technology in case of help need please write to us at email</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hey &lt;user&gt; thank you for your review. the magic effect be only available for a handful of device. please contact us at &lt;email&gt; if you have any question.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; thank for your review. we apologize for this situation and be ready to help. please contact our support team at &lt;email&gt; and they will guide step by step to solve this issue.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #13</th>
+              <th>what's the point of use this if &lt;digit&gt; of the time it can't accept my card.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">we're so sorry about the trouble. send us a note &lt;url&gt; contact with more detail so we can follow up !</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hi thank for your kind feedback if you like our app please rate us digit star we will continually spare every effort to provide you the best app for free have a good day</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">we're here to help. send us a note &lt;url&gt; contact so we can look into this.&lt;email&gt;</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; this doesn't sound right. let's connect. please send a note to &lt;url&gt; contact so we can follow up with you.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #14</th>
+              <th>when i click for download movie it say your &lt;app&gt; phone be affect by a virus or update your android. please stop this i be irritate by this please fix.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hi my dear friend so sorry for the inconvenience. have you turn on ad blocker and powerful ad blocker ? in order to check your problem better and faster plz visit our help center site &lt;url&gt; and provide us the specific link and error screenshot of the ads to test. look forward to your reply. good day.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hi my dear friend sorry to hear that. you can download the whole video ? &lt;digit&gt;. please open menu setting feedback open the download link and upload file type phone model imei &lt;digit&gt; detail about your problem our tech team will help to solve your problem. thank for support.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hi there. sorry for this issue. we'd like to know how this issue happen. could you please provide detail description of your action in &lt;digit&gt; &lt;app&gt; or what's wrong with &lt;app&gt;. attach some screenshots would be helpful. please contact us via feedback at the top right of &lt;digit&gt; &lt;app&gt; or email &lt;email&gt;</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi there sorry for this issue we d like to know how this issue happen could you please provide detail description of your action in digit app or what s wrong with app attach some screenshots would be helpful please contact us via feedback at the top right of digit app or email email</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col" style="vertical-align: middle;">Review #15</th>
+              <th>please add new brush like &lt;app&gt; color.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="table-danger">Developer's Response</th>
+              <td class="table-danger">hey &lt;user&gt; thank for your review and thank for your suggestion we will pass it to our development team so please stay tune with us and wait for our upcoming update.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">NNGen</th>
+              <td class="table-secondary">hi there we be glad to see that you be happy with the app please make us happy as well by leave us user digit star rat</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-warning">NMT</th>
+              <td class="table-warning">hi &lt;user&gt; thank for your review. we be really sorry that you feel this way about the app.</td>
+            </tr>
+            <tr>
+              <td scope="row" class="table-success">RRGen</td>
+              <td class="table-success">hi &lt;user&gt; thank for your suggestion. we will consider it on the new version. please contact us at &lt;email&gt; so we can share it with the best solution.</td>
+            </tr>
+          </tbody>
+       </table>
+      </div>
+
+
+  </section>
+  
+
+  
+
+  
+
+  
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Remine-Lab 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Wind
+
+</body>
+
+</html>
