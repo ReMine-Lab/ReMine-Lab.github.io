@@ -56,6 +56,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.carousel-control-prev{
+  color: #FFFFFF;
+}
+
 .carousel-caption p{
   margin-left: -150px;
   margin-right: -150px;
